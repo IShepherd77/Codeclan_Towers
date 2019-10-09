@@ -10,13 +10,13 @@ public class BedroomTest {
 
     @Before
     public void before(){
-        bedroom = new Bedroom(7, 2, "double");
+        bedroom = new Bedroom("7", 2, "double");
         guest = new Guest("Ian");
     }
 
     @Test
     public void canGetRoomNumber(){
-        assertEquals(7, bedroom.getRoomNumber());
+        assertEquals("7", bedroom.getRoomNumber());
     }
 
     @Test
