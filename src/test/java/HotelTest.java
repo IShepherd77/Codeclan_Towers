@@ -46,10 +46,11 @@ public class HotelTest {
         assertEquals(1, bedroom.getCount());
     }
 
-//    @Test
-//    public void canGetNumberOfNightsFromBooking(){
-//        assertEquals(2, getNumberOfNights());
-//    }
+    @Test
+    public void canGetNumberOfNightsFromBooking(){
+        hotel.addBooking(booking);
+        assertEquals(2, hotel.getNumberOfNights(booking));
+    }
 
     @Test
     public void canAddBooking(){
