@@ -13,8 +13,8 @@ public class HotelTest {
 
     @Before
     public void before(){
-        hotel = new Hotel("Camerian Towers");
-        guest = new Guest("Paris");
+        hotel = new Hotel("Shepherd Towers");
+        guest = new Guest("Ian");
         bedroom =  new Bedroom(7, 2, "double");
         conferenceRoom = new ConferenceRoom(10, "The Yeltzin");
         hotel.addBedroom(bedroom);
@@ -25,7 +25,7 @@ public class HotelTest {
 
     @Test
     public void canGetHotelName(){
-        assertEquals("Camerian Towers", hotel.getName());
+        assertEquals("Shepherd Towers", hotel.getName());
     }
 
     @Test
