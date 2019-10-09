@@ -7,8 +7,8 @@ public class BookingTest {
 
     public Booking booking;
     public Bedroom bedroom;
-    public Guest guest;
     public ConferenceRoom conferenceRoom;
+    public Guest guest;
 
     @Before
     public void before(){
@@ -24,6 +24,11 @@ public class BookingTest {
     @Test
     public  void canGetBedroomBooked(){
         assertEquals(bedroom, booking.getBedroomBooked());
+    }
+
+    @Test
+    public void canBookConferenceRoom(){
+        assertEquals(conferenceRoom, booking.getConferenceRoomBooked());
     }
 
 }
