@@ -50,7 +50,6 @@ public class Hotel {
 
 }
 
-
     public int getNumberOfNights(Booking booking) {
         return booking.getNumberOfNightsBooked();
     }
