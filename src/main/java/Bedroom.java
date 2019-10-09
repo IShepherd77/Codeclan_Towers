@@ -26,6 +26,21 @@ public class Bedroom {
     public String getRoomType() {
         return this.roomType;
     }
+
+    public int getCount(){
+        return this.bedroomCollection.size();
+    }
+
+
+    public void addGuest(Guest guest) {
+        if(this.bedroomCollection.size() < this.capacity){
+            this.bedroomCollection.add(guest);
+        }
+    }
+
+    public void removeGuest(Guest guest) {
+        this.bedroomCollection.remove(guest);
+    }
 }
 
 

@@ -29,4 +29,23 @@ public class BedroomTest {
         assertEquals("double", bedroom.getRoomType());
     }
 
+    @Test
+    public void canAddGuest(){
+        bedroom.addGuest(guest);
+        bedroom.addGuest(guest);
+        assertEquals(2, bedroom.getCount());
+    }
+
+    @Test
+    public void canRemoveGuest(){
+        bedroom.addGuest(guest);
+        bedroom.addGuest(guest);
+        bedroom.removeGuest(guest);
+        assertEquals(1, bedroom.getCount());
+    }
+
+
+
+
+
 }
