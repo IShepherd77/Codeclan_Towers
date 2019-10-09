@@ -25,8 +25,12 @@ public class Hotel {
         this.hotelBedroomCollection.add(bedroom);
     }
 
-    public void checkIntoBedroom(Hotel hotel) {
-        Guest guest = hotel.addGuest(guest);
-        this.hotelBedroomCollection.add(guest);
+    public void checkIntoBedroom(Bedroom bedroom, Guest guest) {
+      bedroom.addGuest(guest);
     }
+
+
+
+
+
 }

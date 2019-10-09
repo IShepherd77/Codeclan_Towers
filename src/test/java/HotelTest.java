@@ -17,7 +17,7 @@ public class HotelTest {
         bedroom =  new Bedroom(7, 2, "double");
         conferenceRoom = new ConferenceRoom(10, "The Yeltzin");
         hotel.addBedroom(bedroom);
-        hotel.checkInBedroom(guest);
+//        hotel.checkIntoBedroom(guest);
     }
 
     @Test
@@ -32,6 +32,7 @@ public class HotelTest {
 
     @Test
     public void canCheckIntoBedroom(){
+        hotel.checkIntoBedroom(bedroom, guest);
         assertEquals(1, bedroom.getCount());
     }
 
